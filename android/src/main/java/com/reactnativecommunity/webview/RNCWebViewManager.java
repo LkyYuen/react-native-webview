@@ -822,9 +822,9 @@ public class RNCWebViewManager extends SimpleViewManager<WebView> {
 
         @Override
         public void onCloseWindow(WebView webView) {
-          super.onCloseWindow(window);
+          super.onCloseWindow(webView);
           Log.d("CLOSEWEBVIEW", "Webview is trying to close");
-          webView.setVisiblity(View.GONE);
+          webView.setVisibility(View.GONE);
           webView.loadUrl("");
         }
       };
@@ -841,9 +841,9 @@ public class RNCWebViewManager extends SimpleViewManager<WebView> {
 
         @Override
         public void onCloseWindow(WebView webView) {
-          super.onCloseWindow(window);
+          super.onCloseWindow(webView);
           Log.d("CLOSEWEBVIEW", "Webview is trying to close");
-          webView.setVisiblity(View.GONE);
+          webView.setVisibility(View.GONE);
           webView.loadUrl("");
         }
       };
