@@ -1143,7 +1143,7 @@ didFinishNavigation:(WKNavigation *)navigation
         [_webView reload];
     }
 }
-
+#if !TARGET_OS_OSX
 - (void)addPullToRefreshControl
 {
     UIRefreshControl *refreshControl = [[UIRefreshControl alloc] init];
@@ -1158,7 +1158,7 @@ didFinishNavigation:(WKNavigation *)navigation
     [refreshControl endRefreshing];
 }
 
-#if !TARGET_OS_OSX
+
 - (void)setPullToRefreshEnabled:(BOOL)pullToRefreshEnabled
 {
     _pullToRefreshEnabled = pullToRefreshEnabled;
